@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/style.css" rel="stylesheet" />
+    <title>Portofolio</title>
+  </head>
+  <body>
+    <!-- Header start -->
+    <header
+      class="absolute bg-transparent top-0 left-0 h-16 w-full flex items-center z-50"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a href="#home" class="font-bold text-lg text-primary block py-6"
+              >Patemon</a
+            >
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-4 lg:hidden"
+            >
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+            >
+              <ul class="block lg:flex">
+                <li class="">
+                  <a
+                    href="#home"
+                    class="text-base text-dark py-2 mx-8 flex hover:text-primary"
+                    >Home</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >About</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#portofolio"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Portofolio</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#clients"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Clients</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#blog"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Blog</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header end -->
+    <!-- Hero section start -->
+    <section id="home" class="pt-36">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-base font-semibold text-sk md:text-xl">
+              Hallo Semua 👋 saya
+              <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">
+                Rachmadani Patria
+              </span>
+            </h1>
+            <h2 class="font-medium text-slate-500 text-lg mb-5">
+              Fullstack Developer |
+              <span class="text-dark"> Business Owner </span>
+            </h2>
+            <p class="font-medium text-slate-400 mb-10 leading-relaxed">
+              Mulai dari 0 ya pak, <span class="text-dark"> IYA! </span>
+            </p>
+            <a
+              href="#"
+              class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+              >Contact Me</a
+            >
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="relative mt-10 lg:mt-9 lg:right-0">
+              <img class="max-w-full mx-auto" src="img/1.png" alt="patemon" />
+              <span
+                class="absolute bottom-15 -z-10 right-8 scale- lg:right-40 lg:scale-100"
+              >
+                <svg
+                  width="400"
+                  height="400"
+                  viewBox="0 0 200 200"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#14b8a6"
+                    d="M27.8,-48C37.8,-42.4,48.8,-38.5,53,-30.7C57.3,-23,54.8,-11.5,57.3,1.4C59.7,14.3,66.9,28.6,64.8,40C62.7,51.4,51.1,59.9,38.7,65.8C26.4,71.6,13.2,74.8,0.7,73.6C-11.8,72.3,-23.5,66.7,-29.2,57C-34.9,47.3,-34.5,33.5,-39.2,23.3C-43.8,13.1,-53.4,6.6,-53.7,-0.2C-54,-6.9,-44.9,-13.8,-40.1,-23.8C-35.4,-33.8,-35.1,-47,-29.1,-54.9C-23.2,-62.8,-11.6,-65.4,-1.3,-63.1C8.9,-60.8,17.9,-53.6,27.8,-48Z"
+                    transform="translate(120 120) scale(1.1) "
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero section end -->
+
+    <!-- About section start -->
+    <section id="about" class="pt-30 pb-32">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-10 lg:w-1/2">
+            <h4 class="text-lg text-primary font-bold uppercase">About me</h4>
+            <h2 class="text-3xl text-dark font-bold mt-3 max-w-xl lg:text-4xl">
+              Embracing AI in Modern Business,
+              <span class="uppercase"> Let’s Do It! </span>
+            </h2>
+            <p
+              class="mt-3 font-medium text-base text-secondary max-w-xl lg:text-lg"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+              ullam explicabo incidunt repudiandae cupiditate doloribus
+              blanditiis. Officia quisquam maiores molestias.
+            </p>
+          </div>
+          <div class="w-full px-4 lg:w-1/2">
+            <h3
+              class="text-2xl lg:text-3xl lg:pt-10 font-semibold text-dark max-w-xl"
+            >
+              Let's connect
+            </h3>
+            <p
+              class="mb-6 mt-3 font-medium text-base text-secondary max-w-xl lg:text-lg"
+            >
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Veritatis aut, labore ea nesciunt quidem sit corporis magni
+              placeat magnam et.
+            </p>
+            <div class="flex items-center">
+              <!-- Instagram -->
+              <a
+                href="#"
+                target="_blank"
+                class="flex w-9 h-9 mr-3 rounded-full border border-slate-300 hover:border-secondary hover:bg-primary hover:text-white justify-center items-center text-slate-300"
+              >
+                <svg
+                  class="fill-current"
+                  width="20"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Instagram</title>
+                  <path
+                    d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+                  />
+                </svg>
+              </a>
+              <!-- X -->
+              <a
+                href="#"
+                target="_blank"
+                class="flex w-9 h-9 mr-3 rounded-full border border-slate-300 justify-center text-center text-slate-300 hover:bg-primary hover:text-white"
+              >
+                <svg
+                  width="20"
+                  class="fill-current"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>X</title>
+                  <path
+                    d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
+                  />
+                </svg>
+              </a>
+              <!-- Discord -->
+              <a
+                href="#"
+                target="_blank"
+                class="flex w-9 h-9 mr-3 rounded-full border border-slate-300 justify-center text-center text-slate-300 hover:bg-primary hover:text-white"
+              >
+                <svg
+                  width="20"
+                  class="fill-current"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Discord</title>
+                  <path
+                    d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="flex w-9 h-9 text-slate-300 items-center justify-center border rounded-full border-slate-300 hover:border-secondary hover:bg-primary hover:text-white"
+              >
+                <?xml version="1.0"?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                <svg
+                  class="fill-current"
+                  enable-background="new 0 0 56.693 56.693"
+                  height="56.693px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 56.693 56.693"
+                  width="20"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <g>
+                    <path
+                      d="M30.071,27.101v-0.077c-0.016,0.026-0.033,0.052-0.05,0.077H30.071z"
+                    />
+                    <path
+                      d="M49.265,4.667H7.145c-2.016,0-3.651,1.596-3.651,3.563v42.613c0,1.966,1.635,3.562,3.651,3.562h42.12   c2.019,0,3.654-1.597,3.654-3.562V8.23C52.919,6.262,51.283,4.667,49.265,4.667z M18.475,46.304h-7.465V23.845h7.465V46.304z    M14.743,20.777h-0.05c-2.504,0-4.124-1.725-4.124-3.88c0-2.203,1.67-3.88,4.223-3.88c2.554,0,4.125,1.677,4.175,3.88   C18.967,19.052,17.345,20.777,14.743,20.777z M45.394,46.304h-7.465V34.286c0-3.018-1.08-5.078-3.781-5.078   c-2.062,0-3.29,1.389-3.831,2.731c-0.197,0.479-0.245,1.149-0.245,1.821v12.543h-7.465c0,0,0.098-20.354,0-22.459h7.465v3.179   c0.992-1.53,2.766-3.709,6.729-3.709c4.911,0,8.594,3.211,8.594,10.11V46.304z"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About section end -->
+    <!-- Portofolio section start -->
+    <section class="pt-36 pb-32 bg-slate-100" id="portofolio">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="text-primary text-lg font-semibold uppercase mb-2">
+              Portofolio
+            </h4>
+            <h2
+              class="font-bold text-dark mb-4 text-3xl sm:text-4xl lg:text-5xl"
+            >
+              Newest Project
+            </h2>
+            <p class="font-medium text-medium text-secondary md:text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa
+              eaque possimus sunt aspernatur vitae optio voluptatum fugit
+              aperiam perspiciatis ab.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
+        >
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="/img/2.jpg" class="w-full" alt="welcome to japan" />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+              Welcome to Japan
+            </h3>
+            <p class="text-medium text-base text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              quos nostrum explicabo.
+            </p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="/img/3.jpg" class="w-full" alt="welcome to japan" />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+              Welcome to Japan
+            </h3>
+            <p class="text-medium text-base text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              quos nostrum explicabo.
+            </p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="/img/4.jpg" class="w-full" alt="welcome to japan" />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+              Welcome to Japan
+            </h3>
+            <p class="text-medium text-base text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              quos nostrum explicabo.
+            </p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="/img/7.jpg" class="w-full" alt="welcome to japan" />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+              Welcome to Japan
+            </h3>
+            <p class="text-medium text-base text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              quos nostrum explicabo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portofolio section end -->
+    <!-- section client start -->
+    <section class="pt-36 pb-32 bg-slate-700" id="clients">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="text-primary text-lg font-semibold uppercase mb-2">
+              Clients
+            </h4>
+            <h2
+              class="font-bold text-white mb-4 text-3xl sm:text-4xl lg:text-5xl"
+            >
+              Our Valued Clients
+            </h2>
+            <p class="font-medium text-medium text-secondary md:text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa
+              eaque possimus sunt aspernatur vitae optio voluptatum fugit
+              aperiam perspiciatis ab.
+            </p>
+          </div>
+        </div>
+        <div class="w-full px-4">
+          <div class="flex flex-wrap items-center justify-center">
+            <a
+              href="#"
+              class="w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-4 xl:mx-8"
+            >
+              <img
+                src="img/clients/Studio_Ghibli_logo.svg.png"
+                alt="Studio Ghibli"
+              />
+            </a>
+            <a
+              href="#"
+              class="w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-4 xl:mx-8"
+            >
+              <img
+                src="img/clients/Ufotable_logo.svg.png"
+                alt="Studio Ghibli"
+              />
+            </a>
+            <a
+              href="#"
+              class="w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-4 xl:mx-8"
+            >
+              <img
+                src="img/clients/Logo_Toei_animation.svg"
+                alt="Studio Ghibli"
+              />
+            </a>
+            <a
+              href="#"
+              class="w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-4 xl:mx-8"
+            >
+              <img
+                src="img/clients/Kyoto_Animation_logo.svg.png"
+                alt="Studio Ghibli"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section client end -->
+    <!-- Blog section start -->
+    <section class="pt-36 pb-32 bg-slate-100" id="blog">
+      <div class="cotainer">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="text-primary text-lg font-semibold uppercase mb-2">
+              Blog
+            </h4>
+            <h2
+              class="font-bold text-dark mb-4 text-3xl sm:text-4xl lg:text-5xl"
+            >
+              New Post!
+            </h2>
+            <p class="font-medium text-medium text-secondary md:text-lg">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
+              dicta quasi molestiae deleniti?
+            </p>
+          </div>
+          <div class="flex flex-wrap">
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+              <div class="rounded-xl shadow-lg bg-white overflow-hidden mb-10">
+                <img
+                  src="/img/blogs/exp-33.jpg"
+                  class="w-full"
+                  alt="Expedition33"
+                />
+                <div class="py-8 px-6">
+                  <h3 class="mb-3">
+                    <a
+                      href="#"
+                      class="block font-semibold text-xl text-dark hover:text-primary truncate"
+                    >
+                      <span class="hover:text-amber-400"> Expedition 33, </span>
+                      GOTY Contander!</a
+                    >
+                  </h3>
+                  <p class="font-medium text-base text-secondary mb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorum tempora nesciunt dolorem!
+                  </p>
+                  <a
+                    href="#"
+                    class="font-medium text-sm bg-primary text-white px-4 py-2 rounded-lg shadow-lg hover:opacity-80"
+                    >Read more</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+              <div class="rounded-xl shadow-lg bg-white overflow-hidden mb-10">
+                <img
+                  src="/img/blogs/exp-33.jpg"
+                  class="w-full"
+                  alt="Expedition33"
+                />
+                <div class="py-8 px-6">
+                  <h3 class="mb-3">
+                    <a
+                      href="#"
+                      class="block font-semibold text-xl text-dark hover:text-primary truncate"
+                    >
+                      <span class="hover:text-amber-400"> Expedition 33, </span>
+                      GOTY Contander!</a
+                    >
+                  </h3>
+                  <p class="font-medium text-base text-secondary mb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorum tempora nesciunt dolorem!
+                  </p>
+                  <a
+                    href="#"
+                    class="font-medium text-sm bg-primary text-white px-4 py-2 rounded-lg shadow-lg hover:opacity-80"
+                    >Read more</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+              <div class="rounded-xl shadow-lg bg-white overflow-hidden mb-10">
+                <img
+                  src="/img/blogs/exp-33.jpg"
+                  class="w-full"
+                  alt="Expedition33"
+                />
+                <div class="py-8 px-6">
+                  <h3 class="mb-3">
+                    <a
+                      href="#"
+                      class="block font-semibold text-xl text-dark hover:text-primary truncate"
+                    >
+                      <span class="hover:text-amber-400"> Expedition 33, </span>
+                      GOTY Contander!</a
+                    >
+                  </h3>
+                  <p class="font-medium text-base text-secondary mb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorum tempora nesciunt dolorem!
+                  </p>
+                  <a
+                    href="#"
+                    class="font-medium text-sm bg-primary text-white px-4 py-2 rounded-lg shadow-lg hover:opacity-80"
+                    >Read more</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+              <div class="rounded-xl shadow-lg bg-white overflow-hidden mb-10">
+                <img
+                  src="/img/blogs/exp-33.jpg"
+                  class="w-full"
+                  alt="Expedition33"
+                />
+                <div class="py-8 px-6">
+                  <h3 class="mb-3">
+                    <a
+                      href="#"
+                      class="block font-semibold text-xl text-dark hover:text-primary truncate"
+                    >
+                      <span class="hover:text-amber-400"> Expedition 33, </span>
+                      GOTY Contander!</a
+                    >
+                  </h3>
+                  <p class="font-medium text-base text-secondary mb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorum tempora nesciunt dolorem!
+                  </p>
+                  <a
+                    href="#"
+                    class="font-medium text-sm bg-primary text-white px-4 py-2 rounded-lg shadow-lg hover:opacity-80"
+                    >Read more</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog section end -->
+    <!-- Section contact start -->
+    <section class="pt-36 pb-32 bg-white" id="contact">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="text-primary text-lg font-semibold uppercase mb-2">
+              Contact
+            </h4>
+            <h2
+              class="font-bold text-dark mb-4 text-3xl sm:text-4xl lg:text-5xl"
+            >
+              Contact Us
+            </h2>
+            <p class="font-medium text-medium text-secondary md:text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Veritatis eum incidunt harum.
+            </p>
+          </div>
+          <form action="">
+            <div class="w-full lg:w-2/3 lg:mx-auto">
+              <div class="w-full px-4 mb-8">
+                <label for="name" class="text-base font-bold text-primary"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  class="w-full bg-slate-200 text-dark rounded-md p-3 focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
+                />
+              </div>
+              <div class="w-full px-4 mb-8">
+                <label for="email" class="text-base font-bold text-primary"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="w-full bg-slate-200 text-dark rounded-md p-3 focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
+                />
+              </div>
+              <div class="w-full px-4 mb-8">
+                <label for="name" class="text-base font-bold text-primary"
+                  >Name</label
+                >
+                <textarea
+                  type="text"
+                  id="name"
+                  class="w-full bg-slate-200 text-dark rounded-md p-3 focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"
+                ></textarea>
+              </div>
+              <div class="w-full px-4">
+                <button
+                  class="text-base font-semibold text-white bg-primary rounded-full py-3 px-8 w-full hover:opacity-80 transition duration-500 hover:shadow-lg"
+                >
+                  Send
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Section contact end -->
+    <footer class="bg-dark pt-24 pb-20">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+            <h2 class="font-bold text-4xl text-white mb-5">RNP</h2>
+            <h3 class="font-bold text-2xl mb-2">Contact Us</h3>
+            <p>rachmadanipatria@gmail.com</p>
+            <p>Jalan jawa no 44</p>
+            <p>Jember</p>
+          </div>
+          <div class="w-full px-4 mb-12 md:w-1/3">
+            <h3 class="font-semibold text-xl text-white mb-5">Post Category</h3>
+            <ul class="text-slate-300">
+              <li>
+                <a
+                  href="#"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >Game of the year</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >PProgramming</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >Artificial Intelgent</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="w-full px-4 mb-12 md:w-1/3">
+            <h3 class="font-semibold text-xl text-white mb-5">Link</h3>
+            <ul class="text-slate-300">
+              <li>
+                <a
+                  href="#home"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >About Me</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#portofolio"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >Portofolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#clients"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >Clients</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#blog"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="w-full pt-10 border-t border-slate-700">
+        <div class="flex items-center justify-center mb-5">
+          <!-- Instagram -->
+          <a
+            href="#"
+            target="_blank"
+            class="flex w-9 h-9 mr-3 rounded-full border border-slate-300 hover:border-secondary hover:bg-primary hover:text-white justify-center items-center text-slate-300"
+          >
+            <svg
+              class="fill-current"
+              width="20"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Instagram</title>
+              <path
+                d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+              />
+            </svg>
+          </a>
+          <!-- X -->
+          <a
+            href="#"
+            target="_blank"
+            class="flex w-9 h-9 mr-3 rounded-full border border-slate-300 justify-center text-center text-slate-300 hover:bg-primary hover:text-white"
+          >
+            <svg
+              width="20"
+              class="fill-current"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>X</title>
+              <path
+                d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
+              />
+            </svg>
+          </a>
+          <!-- Discord -->
+          <a
+            href="#"
+            target="_blank"
+            class="flex w-9 h-9 mr-3 rounded-full border border-slate-300 justify-center text-center text-slate-300 hover:bg-primary hover:text-white"
+          >
+            <svg
+              width="20"
+              class="fill-current"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Discord</title>
+              <path
+                d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"
+              />
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="flex w-9 h-9 text-slate-300 items-center justify-center border rounded-full border-slate-300 hover:border-secondary hover:bg-primary hover:text-white"
+          >
+            <?xml version="1.0"?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+            <svg
+              class="fill-current"
+              enable-background="new 0 0 56.693 56.693"
+              height="56.693px"
+              id="Layer_1"
+              version="1.1"
+              viewBox="0 0 56.693 56.693"
+              width="20"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <g>
+                <path
+                  d="M30.071,27.101v-0.077c-0.016,0.026-0.033,0.052-0.05,0.077H30.071z"
+                />
+                <path
+                  d="M49.265,4.667H7.145c-2.016,0-3.651,1.596-3.651,3.563v42.613c0,1.966,1.635,3.562,3.651,3.562h42.12   c2.019,0,3.654-1.597,3.654-3.562V8.23C52.919,6.262,51.283,4.667,49.265,4.667z M18.475,46.304h-7.465V23.845h7.465V46.304z    M14.743,20.777h-0.05c-2.504,0-4.124-1.725-4.124-3.88c0-2.203,1.67-3.88,4.223-3.88c2.554,0,4.125,1.677,4.175,3.88   C18.967,19.052,17.345,20.777,14.743,20.777z M45.394,46.304h-7.465V34.286c0-3.018-1.08-5.078-3.781-5.078   c-2.062,0-3.29,1.389-3.831,2.731c-0.197,0.479-0.245,1.149-0.245,1.821v12.543h-7.465c0,0,0.098-20.354,0-22.459h7.465v3.179   c0.992-1.53,2.766-3.709,6.729-3.709c4.911,0,8.594,3.211,8.594,10.11V46.304z"
+                />
+              </g>
+            </svg>
+          </a>
+        </div>
+        <p class="font-medium text-xs text-slate-500 text-center">
+          Dibuat oleh
+          <a href="" class="text-primary" target="_blank"> Rachmadani Patria </a
+          >, menggunakan
+          <a
+            href="https://tailwindcss.com"
+            class="text-sky-400"
+            target="_blank"
+          >
+            Tailwind CS
+          </a>
+        </p>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <div class="flex fixed w-9 h-9 bottom-5 right-5 bg-primary rounded-full">
+      <a href="#" class="text-sm m-auto cursor-pointer text-amber-50">🔝</a>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
