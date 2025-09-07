@@ -1,5 +1,7 @@
 //navbar-fixed
 window.onscroll = () => {
+  const totalHeight = document.documentElement.scrollHeight;
+  const scrollTop = document.querySelector('#scroll-top');
   const header = document.querySelector('header');
   const fixedNav = header.offsetTop;
 
@@ -7,6 +9,14 @@ window.onscroll = () => {
     header.classList.add('navbar-fixed');
   } else {
     header.classList.remove('navbar-fixed');
+  }
+
+  if (window.scrollY + window.innerHeight >= totalHeight - 1500) {
+    scrollTop.classList.add('opacity-100');
+    scrollTop.classList.remove('pointer-events-none');
+  } else {
+    scrollTop.classList.remove('opacity-100');
+    scrollTop.classList.add('pointer-events-none');
   }
 };
 

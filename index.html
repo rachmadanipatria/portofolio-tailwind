@@ -286,10 +286,14 @@
           class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
         >
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <img src="/img/2.jpg" class="w-full" alt="welcome to japan" />
+            <div class="grid-card group">
+              <img
+                src="img/2.jpg"
+                class="grid-card-image"
+                alt="welcome to japan"
+              />
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+            <h3 class="font-semibold text-xl text-primary mt-5 mb-3">
               Welcome to Japan
             </h3>
             <p class="text-medium text-base text-secondary">
@@ -298,10 +302,14 @@
             </p>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <img src="/img/3.jpg" class="w-full" alt="welcome to japan" />
+            <div class="grid-card">
+              <img
+                src="img/3.jpg"
+                class="grid-card-image"
+                alt="welcome to japan"
+              />
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+            <h3 class="font-semibold text-xl text-primary mt-5 mb-3">
               Welcome to Japan
             </h3>
             <p class="text-medium text-base text-secondary">
@@ -310,10 +318,14 @@
             </p>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <img src="/img/4.jpg" class="w-full" alt="welcome to japan" />
+            <div class="grid-card group">
+              <img
+                src="img/4.jpg"
+                class="grid-card-image"
+                alt="welcome to japan"
+              />
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+            <h3 class="font-semibold text-xl text-primary mt-5 mb-3">
               Welcome to Japan
             </h3>
             <p class="text-medium text-base text-secondary">
@@ -322,10 +334,10 @@
             </p>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <img src="/img/7.jpg" class="w-full" alt="welcome to japan" />
+            <div class="grid-card">
+              <img src="img/7.jpg" class="w-full" alt="welcome to japan" />
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+            <h3 class="font-semibold text-primary text-xl mt-5 mb-3">
               Welcome to Japan
             </h3>
             <p class="text-medium text-base text-secondary">
@@ -360,16 +372,19 @@
         <div class="w-full px-4">
           <div class="flex flex-wrap items-center justify-center">
             <a
-              href="#"
+              href="https://www.ghibli.jp/"
+              target="_blank"
               class="w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-4 xl:mx-8"
             >
               <img
                 src="img/clients/Studio_Ghibli_logo.svg.png"
                 alt="Studio Ghibli"
+                class="hover:drop-shadow-[0_0_0_2px_#14b8a6]"
               />
             </a>
             <a
-              href="#"
+              href="https://www.ufotable.com/en/"
+              target="_blank"
               class="w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-4 xl:mx-8"
             >
               <img
@@ -378,7 +393,8 @@
               />
             </a>
             <a
-              href="#"
+              href="https://corp.toei-anim.co.jp/en/index.html"
+              target="_blank"
               class="w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-4 xl:mx-8"
             >
               <img
@@ -387,7 +403,8 @@
               />
             </a>
             <a
-              href="#"
+              href="https://www.kyotoanimation.co.jp/en/"
+              target="_blank"
               class="w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-4 xl:mx-8"
             >
               <img
@@ -627,7 +644,7 @@
                 <a
                   href="#"
                   class="inline-block text-base hover:text-primary mb-3"
-                  >PProgramming</a
+                  >Programming</a
                 >
               </li>
               <li>
@@ -790,8 +807,11 @@
       </div>
     </footer>
     <!-- footer end -->
-    <div class="flex fixed w-9 h-9 bottom-5 right-5 bg-primary rounded-full">
-      <a href="#" class="text-sm m-auto cursor-pointer text-amber-50">🔝</a>
+    <div
+      id="scroll-top"
+      class="flex fixed w-9 h-9 bottom-5 right-5 bg-primary rounded-full opacity-0 pointer-events-none transition-opacity duration-500"
+    >
+      <a href="#" class="text-sm m-auto text-amber-50">🔝</a>
     </div>
     <script src="js/script.js"></script>
   </body>
